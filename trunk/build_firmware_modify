@@ -45,7 +45,7 @@ echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=n" >> .config #ddnsto  ~0.5M
 echo "CONFIG_FIRMWARE_INCLUDE_ALDRIVER=n" >> .config  #ALDRIVER  ~3m
 echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config #mentohust
 echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> .config #SQM
-echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=y" >>.config #wireguard 10k
+echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=n" >>.config #wireguard 10k
 echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> .config #frpc
 echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #frps
 #CPU超频
