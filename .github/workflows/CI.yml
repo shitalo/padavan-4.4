@@ -1,12 +1,25 @@
 name: CI
 
 # Controls when the action will run. 
+# on: 
+#   push:
+#   pull_request:
+#   workflow_dispatch:
+#   release:
+#     types: [published]
+
 on: 
-  push:
-  pull_request:
-  workflow_dispatch:
   release:
     types: [published]
+  push:
+    tags:
+    - 'v*'
+  #  branches: 
+  #    - master
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: [started]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
