@@ -13,7 +13,9 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-20.04
-    if: ${{ !(github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')) }}
+    # 仓库更新
+    # if: ${{ !(github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')) }}
+    if: github.event.repository.owner.id == github.event.sender.id # 自己点的 Star
     env:
       build_variant: ${{ matrix.build_variant }}
       targets: ${{ matrix.targets }}
