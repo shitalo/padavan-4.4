@@ -6,6 +6,6 @@
  - 去除用于校园网认证的 minieap、dogcom 校园网
  - 去除 vlmcsd-KMS 服务器
  - 去除科学上网相关插件
- - 内网穿透仅保留 wireguard
+ - 去除内网穿透相关插件
  - 保留 SQM，用于 QOS 加速
  - 超频 1100Mhz
